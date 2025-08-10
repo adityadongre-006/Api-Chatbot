@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@import "./App.css";
+
+body {
+  padding-top: 20px;
+  padding-bottom: 80px;
+  text-align: center;
+  background-color: #070b1d;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 860px;
+  max-width: 95%;
+  height: 100%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+hr {
+  margin: 30px auto;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 24px;
+  border-radius: 15px;
+  /* border: 3px solid rgb(255, 1, 73); */
+}
+input {
+  border: 1px solid blue;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: rgb(28, 35, 35);
+}
+.gradient {
+  background: linear-gradient(
+    to bottom right,
+    rgb(255, 0, 153),
+    rgb(255, 0, 255),
+    rgb(68, 0, 255),
+    rgb(112, 6, 225),
+    rgb(255, 0, 115),
+    red,
+    rgb(6, 205, 255)
+  );
+  background-size: 200%;
+  background-clip: text;
+  color: transparent;
+  animation: grad 3s linear infinite;
+}
+
+@keyframes grad {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 200%;
+  }
+}
